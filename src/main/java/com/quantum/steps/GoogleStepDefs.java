@@ -81,11 +81,11 @@ public class GoogleStepDefs {
 	
 	@When("I select google logo \"([^\"]*)\" visually")
 	public void iSelectGoogleWithImage(String img) {
-		new PerfectoUtils().clickWithVisualImage(img, 10);
+		new PerfectoUtils().clickWithVisualImage(img, 30);
 	}
 	
 	@Then("I should see google logo \"([^\"]*)\" visually")
 	public void iVerifyGoogleWithImage(String img) {
-		new PerfectoUtils().verifyVisualImage(img, 10);
+		new PerfectoUtils().verifyVisualImage(img, 30);
 	}
 }
