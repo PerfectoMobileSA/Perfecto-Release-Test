@@ -4,7 +4,7 @@
 		<listener class-name="com.quantum.listeners.QuantumReportiumListener" />
 	</listeners>
 	
-	<test name="Windows 10 Chrome 83 Test US East" enabled="true" thread-count="10">
+	<test name="Windows 10 Chrome beta Test US East" enabled="true" thread-count="10">
 		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
 		<parameter name="perfecto.capabilities.platformVersion" value="10"/>
 		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
@@ -23,7 +23,7 @@
 				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
 		</classes>
 	</test>
-	<test name="Windows 8.1 Chrome 83 Test US east" enabled="true" thread-count="10">
+	<test name="Windows 8.1 Chrome beta Test US east" enabled="true" thread-count="10">
 		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
 		<parameter name="perfecto.capabilities.platformVersion" value="8.1"/>
 		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
@@ -42,7 +42,7 @@
 				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
 		</classes>
 	</test>
-		<test name="Windows 7 Chrome 83 Test US East" enabled="true" thread-count="10">
+		<test name="Windows 7 Chrome beta Test US East" enabled="true" thread-count="10">
 		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
 		<parameter name="perfecto.capabilities.platformVersion" value="7"/>
 		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
@@ -61,7 +61,7 @@
 				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
 		</classes>
 	</test>
-	<test name="Windows 10 Firefox 76 Test US East" enabled="true" thread-count="10">
+	<test name="Windows 10 Firefox beta Test US East" enabled="true" thread-count="10">
 		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
 		<parameter name="perfecto.capabilities.platformVersion" value="10"/>
 		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
@@ -81,7 +81,7 @@
 		</classes>
 	</test>
 	
-	<test name="Windows 8.1 Firefox 76 Test US East" enabled="true" thread-count="10">
+	<test name="Windows 8.1 Firefox beta Test US East" enabled="true" thread-count="10">
 		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
 		<parameter name="perfecto.capabilities.platformVersion" value="8.1"/>
 		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
@@ -100,7 +100,7 @@
 				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
 		</classes>
 	</test>
-		<test name="Windows 7 Firefox 76 Test US East" enabled="true" thread-count="10">
+		<test name="Windows 7 Firefox beta Test US East" enabled="true" thread-count="10">
 		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
 		<parameter name="perfecto.capabilities.platformVersion" value="7"/>
 		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
@@ -120,7 +120,7 @@
 		</classes>
 	</test>
 	
-	<test name="Windows 10 Edge 83 Test US East" enabled="true" thread-count="10">
+	<test name="Windows 10 Edge 83 Test US East" enabled="false" thread-count="10">
 		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
 		<parameter name="perfecto.capabilities.platformVersion" value="10"/>
 		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
@@ -140,7 +140,7 @@
 		</classes>
 	</test>
 	
-	<test name="Windows 8.1 Edge 83 Test US East" enabled="true" thread-count="10">
+	<test name="Windows 8.1 Edge 83 Test US East" enabled="false" thread-count="10">
 		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
 		<parameter name="perfecto.capabilities.platformVersion" value="8.1"/>
 		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
@@ -159,7 +159,7 @@
 				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
 		</classes>
 	</test>
-		<test name="Windows 7 Edge 83 Test US East" enabled="true" thread-count="10">
+		<test name="Windows 7 Edge 83 Test US East" enabled="false" thread-count="10">
 		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
 		<parameter name="perfecto.capabilities.platformVersion" value="7"/>
 		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
