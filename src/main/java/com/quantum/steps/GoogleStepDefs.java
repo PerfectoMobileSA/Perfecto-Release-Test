@@ -14,6 +14,7 @@ import com.qmetry.qaf.automation.ui.WebDriverTestBase;
 import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement;
 import com.quantum.pages.GooglePage;
 import com.quantum.utils.DeviceUtils;
+import com.quantum.utils.DriverUtils;
 import com.quantum.utils.PerfectoUtils;
 
 import cucumber.api.java.en.Given;
@@ -29,6 +30,8 @@ public class GoogleStepDefs {
 		} catch (Exception e) {
 			
 		}
+		DriverUtils.getDriver().manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+		new WebDriverTestBase().getDriver().get("http://www.google.com/");
 		new WebDriverTestBase().getDriver().get("http://www.google.com/");
 	}
 
