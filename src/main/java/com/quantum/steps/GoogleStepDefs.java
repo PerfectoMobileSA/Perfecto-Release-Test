@@ -1,7 +1,9 @@
 package com.quantum.steps;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Action;
@@ -22,7 +24,11 @@ import cucumber.api.java.en.When;
 public class GoogleStepDefs {
 	@Given("^I am on Google Search Page$")
 	public void I_am_on_Google_Search_Page() throws Throwable {
-		new WebDriverTestBase().getDriver().manage().window().maximize();
+		try {
+			new WebDriverTestBase().getDriver().manage().window().maximize();
+		} catch (Exception e) {
+			
+		}
 		new WebDriverTestBase().getDriver().get("http://www.google.com/");
 	}
 

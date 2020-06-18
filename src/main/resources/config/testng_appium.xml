@@ -7,7 +7,7 @@
     <!-- To use actual AppiumDriver classes defined    -->
     <!-- by driverClass property in env.resources dirs -->
     <!-- Set driver.name value to perfectoDriver       -->
-    <parameter name="driver.name" value="perfectoDriver"/>
+     <parameter name="driver.name" value="perfectoDriver"/>
 
     <test name="IOS Release Test" enabled="true" parallel="methods">
         <parameter name="driver.capabilities.model" value="iPhone.*"/>
@@ -46,7 +46,7 @@
 		<parameter name="driver.capabilities.platformName" value="Android"/>
 		<parameter name="driver.capabilities.deviceName" value="Pixel 3 XL"/>
 		<parameter name="perfecto.capabilities.browserName" value="Chrome"/>
-        <parameter name="env.resources" value="src/main/resources/android"/>
+		<parameter name="driver.name" value="perfectoRemoteDriver"/>
         <groups>
             <run>
                 <include name="@imageAnalysis"/>
@@ -63,7 +63,8 @@
 		<parameter name="driver.capabilities.platformName" value="iOS"/>
 		<parameter name="driver.capabilities.deviceName" value="iPhone X"/>
 		<parameter name="perfecto.capabilities.browserName" value="Safari"/>
-        <parameter name="env.resources" value="src/main/resources/android"/>
+		<!-- <parameter name="env.resources" value="src/main/resources/ios"/> -->
+		<parameter name="driver.name" value="perfectoRemoteDriver"/>
         <groups>
             <run>
                 <include name="@imageAnalysis"/>

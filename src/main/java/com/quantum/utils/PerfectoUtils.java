@@ -10,7 +10,7 @@ public class PerfectoUtils {
 		params.put("content", content);
 		params.put("threshold", 80);
 		params.put("timeout", 10);
-		DriverUtils.getAppiumDriver().executeScript("mobile:text:select", params);
+		DriverUtils.getDriver().executeScript("mobile:text:select", params);
 	}
 	
 	public void clickWithVisualText(String content, int timeout) {
@@ -18,7 +18,7 @@ public class PerfectoUtils {
 		params.put("content", content);
 		params.put("threshold", 80);
 		params.put("timeout", timeout);
-		DriverUtils.getAppiumDriver().executeScript("mobile:text:select", params);
+		DriverUtils.getDriver().executeScript("mobile:text:select", params);
 	}
 	
 	public boolean verifyVisualText(String text) {
@@ -26,7 +26,7 @@ public class PerfectoUtils {
 		params.put("content", text);
 		params.put("threshold", 80);
 		params.put("timeout", 10);
-		String res = (String)DriverUtils.getAppiumDriver().executeScript("mobile:checkpoint:text", params);
+		String res = (String)DriverUtils.getDriver().executeScript("mobile:checkpoint:text", params);
 		return Boolean.parseBoolean(res);
 	}
 	
@@ -35,7 +35,7 @@ public class PerfectoUtils {
 		params.put("content", text);
 		params.put("threshold", 80);
 		params.put("timeout", timeout);
-		String res = (String)DriverUtils.getAppiumDriver().executeScript("mobile:checkpoint:text", params);
+		String res = (String)DriverUtils.getDriver().executeScript("mobile:checkpoint:text", params);
 		return Boolean.parseBoolean(res);
 	}
 	
@@ -44,7 +44,7 @@ public class PerfectoUtils {
 		params.put("content", img);
 		params.put("match", "bounded");
 		params.put("timeout", timeout);
-		DriverUtils.getAppiumDriver().executeScript("mobile:image:select", params);
+		DriverUtils.getDriver().executeScript("mobile:image:select", params);
 	}
 	
 	public void verifyVisualImage(String img, int timeout) {
@@ -52,6 +52,6 @@ public class PerfectoUtils {
 		params.put("content", img);
 		params.put("match", "bounded");
 		params.put("timeout", timeout);
-		DriverUtils.getAppiumDriver().executeScript("mobile:checkpoint:image", params);
+		DriverUtils.getDriver().executeScript("mobile:checkpoint:image", params);
 	}
 }
