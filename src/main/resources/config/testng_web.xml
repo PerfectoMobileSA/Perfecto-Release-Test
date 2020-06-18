@@ -1,0 +1,181 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Web Demo Suite" verbose="0" parallel="tests" thread-count="100">
+	<listeners>
+		<listener class-name="com.quantum.listeners.QuantumReportiumListener" />
+	</listeners>
+	
+	<test name="Windows 10 Chrome 83 Test US East" enabled="true" thread-count="10">
+		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
+		<parameter name="perfecto.capabilities.platformVersion" value="10"/>
+		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
+		<parameter name="perfecto.capabilities.browserName" value="Chrome"/>
+		<parameter name="perfecto.capabilities.location" value="US East"/>
+		<parameter name="perfecto.capabilities.resolution" value="1024x768"/>
+		<parameter name="perfecto.capabilities.deviceType" value="Web"/>
+		<parameter name="env.resources" value="src/main/resources/common" />
+		<groups>
+			<run>
+				<include name="@20.8Web" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+		</classes>
+	</test>
+	<test name="Windows 8.1 Chrome 83 Test US east" enabled="true" thread-count="10">
+		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
+		<parameter name="perfecto.capabilities.platformVersion" value="8.1"/>
+		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
+		<parameter name="perfecto.capabilities.browserName" value="Chrome"/>
+		<parameter name="perfecto.capabilities.location" value="US East"/>
+		<parameter name="perfecto.capabilities.resolution" value="1024x768"/>
+		<parameter name="perfecto.capabilities.deviceType" value="Web"/>
+		<parameter name="env.resources" value="src/main/resources/common" />
+		<groups>
+			<run>
+				<include name="@20.8Web" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+		</classes>
+	</test>
+		<test name="Windows 7 Chrome 83 Test US East" enabled="true" thread-count="10">
+		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
+		<parameter name="perfecto.capabilities.platformVersion" value="7"/>
+		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
+		<parameter name="perfecto.capabilities.browserName" value="Chrome"/>
+		<parameter name="perfecto.capabilities.location" value="US East"/>
+		<parameter name="perfecto.capabilities.resolution" value="1024x768"/>
+		<parameter name="perfecto.capabilities.deviceType" value="Web"/>
+		<parameter name="env.resources" value="src/main/resources/common" />
+		<groups>
+			<run>
+				<include name="@20.8Web" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+		</classes>
+	</test>
+	<test name="Windows 10 Firefox 76 Test US East" enabled="true" thread-count="10">
+		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
+		<parameter name="perfecto.capabilities.platformVersion" value="10"/>
+		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
+		<parameter name="perfecto.capabilities.browserName" value="Firefox"/>
+		<parameter name="perfecto.capabilities.location" value="US East"/>
+		<parameter name="perfecto.capabilities.resolution" value="1024x768"/>
+		<parameter name="perfecto.capabilities.deviceType" value="Web"/>
+		<parameter name="env.resources" value="src/main/resources/common" />
+		<groups>
+			<run>
+				<include name="@20.8Web" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+		</classes>
+	</test>
+	
+	<test name="Windows 8.1 Firefox 76 Test US East" enabled="true" thread-count="10">
+		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
+		<parameter name="perfecto.capabilities.platformVersion" value="8.1"/>
+		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
+		<parameter name="perfecto.capabilities.browserName" value="Firefox"/>
+		<parameter name="perfecto.capabilities.location" value="US East"/>
+		<parameter name="perfecto.capabilities.resolution" value="1024x768"/>
+		<parameter name="perfecto.capabilities.deviceType" value="Web"/>
+		<parameter name="env.resources" value="src/main/resources/common" />
+		<groups>
+			<run>
+				<include name="@20.8Web" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+		</classes>
+	</test>
+		<test name="Windows 7 Firefox 76 Test US East" enabled="true" thread-count="10">
+		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
+		<parameter name="perfecto.capabilities.platformVersion" value="7"/>
+		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
+		<parameter name="perfecto.capabilities.browserName" value="Firefox"/>
+		<parameter name="perfecto.capabilities.location" value="US East"/>
+		<parameter name="perfecto.capabilities.resolution" value="1024x768"/>
+		<parameter name="perfecto.capabilities.deviceType" value="Web"/>
+		<parameter name="env.resources" value="src/main/resources/common" />
+		<groups>
+			<run>
+				<include name="@20.8Web" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+		</classes>
+	</test>
+	
+	<test name="Windows 10 Edge 83 Test US East" enabled="true" thread-count="10">
+		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
+		<parameter name="perfecto.capabilities.platformVersion" value="10"/>
+		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
+		<parameter name="perfecto.capabilities.browserName" value="Edge"/>
+		<parameter name="perfecto.capabilities.location" value="US East"/>
+		<parameter name="perfecto.capabilities.resolution" value="1024x768"/>
+		<parameter name="perfecto.capabilities.deviceType" value="Web"/>
+		<parameter name="env.resources" value="src/main/resources/common" />
+		<groups>
+			<run>
+				<include name="@20.8Web" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+		</classes>
+	</test>
+	
+	<test name="Windows 8.1 Edge 83 Test US East" enabled="true" thread-count="10">
+		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
+		<parameter name="perfecto.capabilities.platformVersion" value="8.1"/>
+		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
+		<parameter name="perfecto.capabilities.browserName" value="Edge"/>
+		<parameter name="perfecto.capabilities.location" value="US East"/>
+		<parameter name="perfecto.capabilities.resolution" value="1024x768"/>
+		<parameter name="perfecto.capabilities.deviceType" value="Web"/>
+		<parameter name="env.resources" value="src/main/resources/common" />
+		<groups>
+			<run>
+				<include name="@20.8Web" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+		</classes>
+	</test>
+		<test name="Windows 7 Edge 83 Test US East" enabled="true" thread-count="10">
+		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
+		<parameter name="perfecto.capabilities.platformVersion" value="7"/>
+		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
+		<parameter name="perfecto.capabilities.browserName" value="Edge"/>
+		<parameter name="perfecto.capabilities.location" value="US East"/>
+		<parameter name="perfecto.capabilities.resolution" value="1024x768"/>
+		<parameter name="perfecto.capabilities.deviceType" value="Web"/>
+		<parameter name="env.resources" value="src/main/resources/common" />
+		<groups>
+			<run>
+				<include name="@20.8Web" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+		</classes>
+	</test>
+</suite>

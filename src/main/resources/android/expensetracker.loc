@@ -1,0 +1,1 @@
+login.email.textfield=css=#login_email > input[name="login_email"]

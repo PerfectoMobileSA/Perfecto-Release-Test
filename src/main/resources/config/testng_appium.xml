@@ -1,0 +1,113 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Appium Demo Suite" verbose="0" parallel="tests">
+    <listeners>
+        <listener class-name="com.quantum.listeners.QuantumReportiumListener"/>
+    </listeners>
+
+    <!-- To use actual AppiumDriver classes defined    -->
+    <!-- by driverClass property in env.resources dirs -->
+    <!-- Set driver.name value to perfectoDriver       -->
+    <parameter name="driver.name" value="perfectoDriver"/>
+
+    <test name="IOS Release Test" enabled="true" parallel="methods">
+        <parameter name="driver.capabilities.model" value="iPhone.*"/>
+        <parameter name="driver.capabilities.browserName" value="Safari"/>
+        <parameter name="env.resources" value="src/main/resources/ios"/>
+
+        <groups>
+            <run>
+                <include name="@visualText"/>
+                <include name="@imageAnalysis"/>
+                <include name="@fileUploadiOS"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
+        </classes>
+    </test>
+    <test name="Android Release Test" enabled="true" parallel="methods">
+        <parameter name="driver.capabilities.model" value="Galaxy.*"/>
+        <parameter name="driver.capabilities.browserName" value="Chrome"/>
+        <parameter name="env.resources" value="src/main/resources/android"/>
+        <groups>
+            <run>
+                <include name="@imageAnalysis"/>
+                <include name="@visualText"/>
+                <include name="@fileUploadAndroid"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
+        </classes>
+    </test>
+    
+    <test name="Android Emulator Test" enabled="true" >
+        <parameter name="driver.additional.capabilities" value="{'useVirtualDevice':true}" />
+		<parameter name="driver.capabilities.platformName" value="Android"/>
+		<parameter name="driver.capabilities.deviceName" value="Pixel 3 XL"/>
+		<parameter name="perfecto.capabilities.browserName" value="Chrome"/>
+        <parameter name="env.resources" value="src/main/resources/android"/>
+        <groups>
+            <run>
+                <include name="@imageAnalysis"/>
+                <include name="@visualText"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
+        </classes>
+    </test>
+    
+     <test name="iOS Simulator Test" enabled="true">
+        <parameter name="driver.additional.capabilities" value="{'useVirtualDevice':true}" />
+		<parameter name="driver.capabilities.platformName" value="iOS"/>
+		<parameter name="driver.capabilities.deviceName" value="iPhone X"/>
+		<parameter name="perfecto.capabilities.browserName" value="Safari"/>
+        <parameter name="env.resources" value="src/main/resources/android"/>
+        <groups>
+            <run>
+                <include name="@imageAnalysis"/>
+                <include name="@visualText"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
+        </classes>
+    </test>
+    
+    <test name="Phone calls scenario Android + Android" enabled="false" parallel="tests">
+    <parameter name="driver.name" value="perfectodeviiDriver"/>
+    <parameter name="driverNameList" value="perfectodevii,perfectoRemote"/>
+    <parameter name="selenium.singletone" value="method"/>
+
+    <!-- Mobile parameters -->
+	<parameter name="perfectodevii.capabilities.sensorInstrument" value="true"/>
+    <parameter name="perfectodevii.capabilities.app" value="PUBLIC:Apps/app-staging-real-release-2_54_1-6017.apk"/>
+    <parameter name="perfectodevii.additional.capabilities" value="{‘fullReset’:true}" />
+    <parameter name="perfectodevii.capabilities.model" value="Pixel 3|Galaxy S10|Galaxy S6|Galaxy Tab E 9.6"/>
+    <parameter name="perfectodevii.capabilities.phoneNumber" value="+.*"/>
+    <parameter name="perfectodevii.capabilities.platformName" value="Android"/>
+    <parameter name="perfectodevii.capabilities.appPackage" value="com.tideplatform.banking.staging"/>
+    <parameter name="perfectodevii.capabilities.driverClass" value="io.appium.java_client.android.AndroidDriver"/>
+
+    <!-- Web Parameters -->
+    <parameter name="driver.capabilities.sensorInstrument" value="true"/>
+    <parameter name="driver.capabilities.app" value="PUBLIC:Apps/app-staging-real-release-2_54_1-6017.apk"/>
+    <parameter name="driver.additional.capabilities" value="{‘fullReset’:true}" />
+    <parameter name="driver.capabilities.model" value="Pixel 3|Galaxy S10|Galaxy S6|Galaxy Tab E 9.6"/>
+    <parameter name="driver.capabilities.phoneNumber" value="+.*"/>
+    <parameter name="driver.capabilities.platformName" value="Android"/>
+    <parameter name="driver.capabilities.appPackage" value="com.tideplatform.banking.staging"/>
+    <parameter name="driver.capabilities.driverClass" value="io.appium.java_client.android.AndroidDriver"/>
+
+    <groups>
+      <run>
+        <include name="@phoneCall"/>
+      </run>
+    </groups>
+    <classes>
+      <class
+        name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
+    </classes>
+  </test>
+</suite>
