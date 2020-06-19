@@ -1,0 +1,4 @@
+login.emailNative.textfield=-ios predicate string=type == 'XCUIElementTypeTextField' AND name == 'login_email'
+login.headerTextNative.label=-ios predicate string=type == 'XCUIElementTypeStaticText' AND name == 'Email'
+login.passwordNative.textfield=-ios predicate string=type == 'XCUIElementTypeSecureTextField' AND name == 'login_passwordl'
+login.loginNative.btn=-ios predicate string=type == 'XCUIElementTypeButton' AND name == 'login_login_btn'

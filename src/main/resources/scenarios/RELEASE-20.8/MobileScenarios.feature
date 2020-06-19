@@ -19,3 +19,10 @@ Given I upload file "appFiles/ExpenseTrackeriOS.ipa" to repository "PRIVATE:rele
 And I install instrumented application "PRIVATE:releasetestExpenseTrackeriOS.ipa"
 And I start application by id "io.perfecto.expense.tracker"
 Then I should see expense tracker login screen
+
+@nativeTest
+Scenario: Verify Expense tracker Login
+Given I start application by id "io.perfecto.expense.tracker"
+Then I should see expense tracker Native login screen
+When I enter "test@test.com" and "password123" in native login screen
+Then I should see expense tracker Native login screen

@@ -24,10 +24,35 @@ public class ExpenseTrackerLoginPage extends WebDriverBaseTestPage<WebDriverTest
 	@FindBy(locator = "login.email.textfield")
 	private QAFWebElement logintextfiled;
 	
+	@FindBy(locator = "login.emailNative.textfield")
+	private QAFWebElement emailNativeTextfield;
+	
+	@FindBy(locator = "login.headerTextNative.label")
+	private QAFWebElement headerTextNative;
+	
+	@FindBy(locator = "login.passwordNative.textfield")
+	private QAFWebElement passwordlNativeTextfield;
+	
+	@FindBy(locator = "login.loginNative.btn")
+	private QAFWebElement loginlNativeButton;
+	
 	public void verifyExpenseTrackerLoginScreen() {
 		Map<String, Object> params = new HashMap<>();
 		params.put("content", "Email");
 		params.put("timeout", "15");
 		driver.executeScript("mobile:text:find", params);
+	}
+	
+	public void verifyExpenseTrackerNativeLoginScreen() {
+		ReportUtils.logAssert("Verify Login screen title", headerTextNative.isDisplayed());
+		ReportUtils.logAssert("Verify Login screen Email", emailNativeTextfield.isDisplayed());
+	}
+	
+	public void loginNative(String email, String password) {
+		emailNativeTextfield.sendKeys(email);
+		passwordlNativeTextfield.sendKeys(password);
+		DriverUtils.getAppiumDriver().hideKeyboard();
+		loginlNativeButton.click();
+		
 	}
 }
