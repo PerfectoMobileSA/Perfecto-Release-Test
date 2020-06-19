@@ -34,6 +34,18 @@ public class GoogleStepDefs {
 		new WebDriverTestBase().getDriver().get("http://www.google.com/");
 		new WebDriverTestBase().getDriver().get("http://www.google.com/");
 	}
+	
+	@Given("^I open \"([^\"]*)\" webpage$")
+	public void I_Open_WebPage(String URL) throws Throwable {
+		try {
+			new WebDriverTestBase().getDriver().manage().window().maximize();
+		} catch (Exception e) {
+			
+		}
+		DriverUtils.getDriver().manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+		new WebDriverTestBase().getDriver().get(URL);
+		new WebDriverTestBase().getDriver().get(URL);
+	}
 
 	@When("^I search for \"([^\"]*)\"$")
 	public void I_search_for(String searchKey) throws Throwable {
@@ -88,13 +100,13 @@ public class GoogleStepDefs {
 		new PerfectoUtils().verifyVisualText(text,30);
 	}
 	
-	@When("I select google logo \"([^\"]*)\" visually")
-	public void iSelectGoogleWithImage(String img) {
+	@When("I select perfecto logo \"([^\"]*)\" visually")
+	public void iSelectPerfectoWithImage(String img) {
 		new PerfectoUtils().clickWithVisualImage(img, 30);
 	}
 	
-	@Then("I should see google logo \"([^\"]*)\" visually")
-	public void iVerifyGoogleWithImage(String img) {
+	@Then("I should see perfecto logo \"([^\"]*)\" visually")
+	public void iVerifyPerfectoWithImage(String img) {
 		new PerfectoUtils().verifyVisualImage(img, 30);
 	}
 }

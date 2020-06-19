@@ -9,9 +9,9 @@ Then I should see expense tracker login screen
 
 @imageAnalysis @20.8
 Scenario: Verify image analysis
-Given I am on Google Search Page
-When I select google logo "PRIVATE:googlelogo.png" visually
-Then I should see google logo "PRIVATE:googlelogo.png" visually
+Given I open "https://www.perfecto.io/" webpage
+When I select perfecto logo "PRIVATE:perfecto.png" visually
+Then I should see perfecto logo "PRIVATE:perfecto.png" visually
 
 @fileUploadiOS @20.8
 Scenario: Verify File upload iOS
