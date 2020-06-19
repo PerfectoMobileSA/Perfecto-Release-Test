@@ -101,7 +101,8 @@ public class GoogleStepDefs {
 	}
 	
 	@When("I select perfecto logo \"([^\"]*)\" visually")
-	public void iSelectPerfectoWithImage(String img) {
+	public void iSelectPerfectoWithImage(String img) throws InterruptedException {
+		Thread.sleep(3000);
 		new PerfectoUtils().clickWithVisualImage(img, 30);
 	}
 	
