@@ -1,7 +1,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Web Demo Suite" verbose="0" parallel="tests" thread-count="100">
     <listeners>
-        <listener class-name="com.quantum.listerners.QuantumReportiumListener"/>
+        <listener class-name="com.quantum.listeners.CustomTestNGReporter"/>
+		<listener class-name="com.quantum.listeners.QuantumReportiumListener" />
     </listeners>
 
     <test name="Chrome Test" enabled="true">
