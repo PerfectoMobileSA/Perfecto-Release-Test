@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
@@ -56,14 +57,17 @@
 					<systemPropertyVariables>
 						<application.properties.file>resources/application.properties</application.properties.file>
 					</systemPropertyVariables>
-
+					<forkCount>5</forkCount>
+					<reuseForks>true</reuseForks>
+					<threadCount>4</threadCount>
+					<parallel>methods</parallel>
 					<suiteXmlFiles>
 						<suiteXmlFile>${testngXmlDir}/testng_web_desktop.xml</suiteXmlFile>
 						<suiteXmlFile>${testngXmlDir}/testng_appium.xml</suiteXmlFile>
 						<suiteXmlFile>${testngXmlDir}/01Wikipedia.xml</suiteXmlFile>
 						<suiteXmlFile>${testngXmlDir}/02WikipediaLocators.xml</suiteXmlFile>
 						<suiteXmlFile>${testngXmlDir}/06testng_desktop.xml</suiteXmlFile>
-						 <suiteXmlFile>${testngXmlDir}/07clockInterface.xml</suiteXmlFile>
+						<suiteXmlFile>${testngXmlDir}/07clockInterface.xml</suiteXmlFile>
 						<suiteXmlFile>${testngXmlDir}/testng_web_course.xml</suiteXmlFile>
 						<suiteXmlFile>${testngXmlDir}/testng_web_parallel.xml</suiteXmlFile>
 						<suiteXmlFile>${testngXmlDir}/testng_web.xml</suiteXmlFile>
@@ -81,10 +85,10 @@
 			<name>Perfecto mobile</name>
 			<url>https://repo1.perfectomobile.com/public/repositories/maven</url>
 		</repository>
-		 <repository>
+		<repository>
 			<id>jai</id>
 			<url>https://repository.jboss.org/nexus/content/repositories/thirdparty-releases</url>
-		</repository> 
+		</repository>
 	</repositories>
 
 	<dependencies>

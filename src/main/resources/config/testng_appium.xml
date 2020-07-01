@@ -118,34 +118,6 @@
         </classes>
     </test>
 
-    <test name="IOS Contacts" enabled="true">
-    <parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
-    <parameter name="env.resources" value="src/main/resources/ios"/>
-    <parameter name="driver.name" value="perfectoRemoteDriver"/>
-    <!--  <parameter name="env.resources" value="src/main/resources/common"/>  -->
-
-    <groups>
-        <run>
-            <include name="@appium"/>
-        </run>
-    </groups>
-    <classes>
-        <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
-    </classes>
-</test>
-    <test name="Android Contacts" enabled="true">
-        <parameter name="driver.capabilities.model" value="Galaxy S.*"></parameter>
-        <parameter name="driver.name" value="perfectoRemoteDriver"/>
-        <parameter name="env.resources" value="src/main/resources/android"/>
-        <groups>
-            <run>
-                 <include name="@appium"/>
-            </run>
-        </groups>
-        <classes>
-            <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
-        </classes>
-    </test>
     
     <test name="Phone calls scenario Android + Android" enabled="false" parallel="tests">
     <parameter name="driver.name" value="perfectodeviiDriver"/>

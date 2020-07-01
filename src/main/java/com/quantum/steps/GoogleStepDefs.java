@@ -87,6 +87,13 @@ public class GoogleStepDefs {
 	
 	@Given("I am on Github home Page")
 	public void iOpenPerfectoSupportPage() {
+		try {
+			new WebDriverTestBase().getDriver().manage().window().maximize();
+		} catch (Exception e) {
+			
+		}
+		DriverUtils.getDriver().manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+		new WebDriverTestBase().getDriver().get("https://github.com/");
 		new WebDriverTestBase().getDriver().get("https://github.com/");
 	}
 	

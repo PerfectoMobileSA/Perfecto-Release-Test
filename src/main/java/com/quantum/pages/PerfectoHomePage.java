@@ -34,6 +34,12 @@ public class PerfectoHomePage extends WebDriverBaseTestPage<WebDriverTestPage>{
 	
 	
 	public void verifyPerfectoHomePage() {
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		ReportUtils.logAssert("Verify Perfecto Home Page Blog option", perfectoHeaderBlog.isDisplayed());
 		ReportUtils.logAssert("Verify Perfecto Home Page Logins option", perfectoHeaderLogins.isDisplayed());
 		ReportUtils.logAssert("Verify Perfecto Home Page integrations option", perfectoHeaderIntegrations.isDisplayed());
