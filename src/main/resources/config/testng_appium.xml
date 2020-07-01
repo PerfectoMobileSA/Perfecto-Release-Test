@@ -10,7 +10,7 @@
     <!-- Set driver.name value to perfectoDriver       -->
      <parameter name="driver.name" value="perfectoDriver"/>
 
-    <test name="IOS Release Test" enabled="true" parallel="methods">
+    <test name="IOS Release Test" enabled="false" parallel="methods">
         <parameter name="driver.capabilities.model" value="iPhone.*"/>
         <parameter name="driver.capabilities.browserName" value="Safari"/>
         <parameter name="env.resources" value="src/main/resources/ios"/>
@@ -32,9 +32,9 @@
         <parameter name="env.resources" value="src/main/resources/android"/>
         <groups>
             <run>
-                <include name="@imageAnalysis"/>
+                <!-- <include name="@imageAnalysis"/> -->
                 <include name="@visualText"/>
-                <include name="@fileUploadAndroid"/>
+                <!-- <include name="@fileUploadAndroid"/> -->
             </run>
         </groups>
         <classes>
@@ -42,7 +42,7 @@
         </classes>
     </test>
     
-    <test name="Android Emulator Web Test" enabled="true">
+    <test name="Android Emulator Web Test" enabled="false">
         <parameter name="driver.additional.capabilities" value="{'useVirtualDevice':true}" />
 		<parameter name="driver.capabilities.platformName" value="Android"/>
 		<parameter name="driver.capabilities.deviceName" value="Pixel 3 XL"/>
@@ -59,7 +59,7 @@
         </classes>
     </test>
     
-    <test name="Android Emulator Native Test" enabled="true">
+    <test name="Android Emulator Native Test" enabled="false">
         <parameter name="driver.additional.capabilities" value="{'useVirtualDevice':true}" />
         <!-- <parameter name="driver.additional.capabilities" value="{'fullReset':true}" /> -->
 		<parameter name="driver.capabilities.platformName" value="Android"/>
@@ -79,7 +79,7 @@
         </classes>
     </test>
     
-     <test name="iOS Simulator Web Test" enabled="true">
+     <test name="iOS Simulator Web Test" enabled="false">
         <parameter name="driver.additional.capabilities" value="{'useVirtualDevice':true}" />
 		<parameter name="driver.capabilities.platformName" value="iOS"/>
 		<parameter name="driver.capabilities.deviceName" value="iPhone X"/>
@@ -111,6 +111,35 @@
         <groups>
             <run>
                 <include name="@nativeTest"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
+        </classes>
+    </test>
+
+    <test name="IOS Contacts" enabled="true">
+    <parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
+    <parameter name="env.resources" value="src/main/resources/ios"/>
+    <parameter name="driver.name" value="perfectoRemoteDriver"/>
+    <!--  <parameter name="env.resources" value="src/main/resources/common"/>  -->
+
+    <groups>
+        <run>
+            <include name="@appium"/>
+        </run>
+    </groups>
+    <classes>
+        <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
+    </classes>
+</test>
+    <test name="Android Contacts" enabled="true">
+        <parameter name="driver.capabilities.model" value="Galaxy S.*"></parameter>
+        <parameter name="driver.name" value="perfectoRemoteDriver"/>
+        <parameter name="env.resources" value="src/main/resources/android"/>
+        <groups>
+            <run>
+                 <include name="@appium"/>
             </run>
         </groups>
         <classes>

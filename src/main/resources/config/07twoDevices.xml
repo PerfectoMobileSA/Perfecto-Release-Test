@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Appium Demo Suite" verbose="0" parallel="tests">
+    <listeners>
+    <listener class-name="com.quantum.listeners.CustomTestNGReporter"/>
+        <listener class-name="com.quantum.listeners.QuantumReportiumListener"/>
+    </listeners>
+
+    <test name="SMS Test Android to Android"  enabled="true">
+        <parameter name="driverNameList" value="perfectoDriver,perfectodevii"></parameter>
+        <parameter name="perfectodevii.capabilities.platformName" value= "Android"></parameter>
+        <parameter name="perfectodevii.capabilities.deviceName" value= "RF8M329FK3X"></parameter>
+        <!-- <parameter name="perfectodevii.capabilities.network" value="AT.*|Verizon"></parameter> -->
+        <parameter name="perfectodevii.capabilities.securityToken" value=""></parameter>
+        
+        <parameter name="perfecto.capabilities.deviceName" value= "8C7X1KBE1"></parameter>
+        <!-- <parameter name="perfecto.capabilities.network" value= "AT.*|Verizon"></parameter> -->
+        <parameter name="env.resources" value="src/main/resources/android"/>
+        <parameter name="driver.name" value="perfectoDriver"/>
+
+        <groups>
+            <run>
+                <include name="@twoDevicesSMS"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
+        </classes>
+    </test>
+
+</suite>
+
+
+
