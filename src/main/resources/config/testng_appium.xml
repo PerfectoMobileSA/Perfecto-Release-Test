@@ -18,7 +18,7 @@
         <groups>
             <run>
                 <include name="@visualText"/>
-                <!-- <include name="@imageAnalysis"/> -->
+                <include name="@imageAnalysis"/>
                 <include name="@fileUploadiOS"/>
             </run>
         </groups>
@@ -32,9 +32,9 @@
         <parameter name="env.resources" value="src/main/resources/android"/>
         <groups>
             <run>
-                <!-- <include name="@imageAnalysis"/> -->
+                <include name="@imageAnalysis"/>
                 <include name="@visualText"/>
-                <!-- <include name="@fileUploadAndroid"/> -->
+                <include name="@fileUploadAndroid"/>
             </run>
         </groups>
         <classes>
@@ -59,7 +59,7 @@
         </classes>
     </test>
     
-    <test name="Android Emulator Native Test" enabled="true">
+    <test name="Android Emulator Native Test" enabled="false">
         <parameter name="driver.additional.capabilities" value="{'useVirtualDevice':true}" />
         <!-- <parameter name="driver.additional.capabilities" value="{'fullReset':true}" /> -->
 		<parameter name="driver.capabilities.platformName" value="Android"/>
