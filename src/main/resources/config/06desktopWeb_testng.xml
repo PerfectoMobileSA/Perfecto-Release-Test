@@ -10,7 +10,7 @@
         <parameter name="perfecto.capabilities.platformName" value="Windows"></parameter>
         <parameter name="perfecto.capabilities.platformVersion" value="10"></parameter>
         <parameter name="perfecto.capabilities.browserName" value="Chrome"></parameter>
-        <parameter name="perfecto.capabilities.browserVersion" value="65"></parameter>
+        <parameter name="perfecto.capabilities.browserVersion" value="beta"></parameter>
         <parameter name="perfecto.capabilities.resolution" value="1280x1024"></parameter>
         <parameter name="perfecto.capabilities.location" value="US East"></parameter>
         <parameter name="perfecto.capabilities.deviceType" value="Web"></parameter>
