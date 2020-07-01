@@ -63,16 +63,11 @@
 						<suiteXmlFile>${testngXmlDir}/01Wikipedia.xml</suiteXmlFile>
 						<suiteXmlFile>${testngXmlDir}/02WikipediaLocators.xml</suiteXmlFile>
 						<suiteXmlFile>${testngXmlDir}/06testng_desktop.xml</suiteXmlFile>
-						<suiteXmlFile>${testngXmlDir}/07clockInterface.xml</suiteXmlFile>
+						 <suiteXmlFile>${testngXmlDir}/07clockInterface.xml</suiteXmlFile>
 						<suiteXmlFile>${testngXmlDir}/testng_web_course.xml</suiteXmlFile>
 						<suiteXmlFile>${testngXmlDir}/testng_web_parallel.xml</suiteXmlFile>
 						<suiteXmlFile>${testngXmlDir}/testng_web.xml</suiteXmlFile>
 						<suiteXmlFile>${testngXmlDir}/07twoDevices.xml</suiteXmlFile>
-						<suiteXmlFile>${testngXmlDir}/01w3school_testng.xml</suiteXmlFile>
-						<suiteXmlFile>${testngXmlDir}/02Calculator.xml</suiteXmlFile>
-						<suiteXmlFile>${testngXmlDir}/03contacts_testng.xml</suiteXmlFile>
-						<suiteXmlFile>${testngXmlDir}/04wikipediaDynamicData_testng.xml</suiteXmlFile>
-						<suiteXmlFile>${testngXmlDir}/06desktopWeb_testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 
 				</configuration>

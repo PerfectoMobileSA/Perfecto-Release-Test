@@ -10,7 +10,7 @@
     <!-- Set driver.name value to perfectoDriver       -->
      <parameter name="driver.name" value="perfectoDriver"/>
 
-    <test name="IOS Release Test" enabled="false" parallel="methods">
+    <test name="IOS Release Test" enabled="true" parallel="methods">
         <parameter name="driver.capabilities.model" value="iPhone.*"/>
         <parameter name="driver.capabilities.browserName" value="Safari"/>
         <parameter name="env.resources" value="src/main/resources/ios"/>
@@ -42,7 +42,7 @@
         </classes>
     </test>
     
-    <test name="Android Emulator Web Test" enabled="false">
+    <test name="Android Emulator Web Test" enabled="true">
         <parameter name="driver.additional.capabilities" value="{'useVirtualDevice':true}" />
 		<parameter name="driver.capabilities.platformName" value="Android"/>
 		<parameter name="driver.capabilities.deviceName" value="Pixel 3 XL"/>
@@ -59,7 +59,7 @@
         </classes>
     </test>
     
-    <test name="Android Emulator Native Test" enabled="false">
+    <test name="Android Emulator Native Test" enabled="true">
         <parameter name="driver.additional.capabilities" value="{'useVirtualDevice':true}" />
         <!-- <parameter name="driver.additional.capabilities" value="{'fullReset':true}" /> -->
 		<parameter name="driver.capabilities.platformName" value="Android"/>
@@ -79,7 +79,7 @@
         </classes>
     </test>
     
-     <test name="iOS Simulator Web Test" enabled="false">
+     <test name="iOS Simulator Web Test" enabled="true">
         <parameter name="driver.additional.capabilities" value="{'useVirtualDevice':true}" />
 		<parameter name="driver.capabilities.platformName" value="iOS"/>
 		<parameter name="driver.capabilities.deviceName" value="iPhone X"/>
