@@ -5,12 +5,12 @@
 		<listener class-name="com.quantum.listeners.QuantumReportiumListener" />
 	</listeners>
 	
-	<test name="Windows 10 Chrome beta Test US East" enabled="true" thread-count="10">
+	<test name="Windows 10 Chrome beta Test EU Frankfurt" enabled="true" thread-count="10">
 		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
 		<parameter name="perfecto.capabilities.platformVersion" value="10"/>
 		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
 		<parameter name="perfecto.capabilities.browserName" value="Chrome"/>
-		<parameter name="perfecto.capabilities.location" value="US East"/>
+		<parameter name="perfecto.capabilities.location" value="EU Frankfurt"/>
 		<parameter name="perfecto.capabilities.resolution" value="1024x768"/>
 		<parameter name="perfecto.capabilities.deviceType" value="Web"/>
 		<parameter name="env.resources" value="src/main/resources/common" />
@@ -24,12 +24,12 @@
 				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
 		</classes>
 	</test>
-	<test name="Windows 8.1 Chrome beta Test US east" enabled="true" thread-count="10">
+	<test name="Windows 8.1 Chrome beta Test EU Frankfurt" enabled="true" thread-count="10">
 		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
 		<parameter name="perfecto.capabilities.platformVersion" value="8.1"/>
 		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
 		<parameter name="perfecto.capabilities.browserName" value="Chrome"/>
-		<parameter name="perfecto.capabilities.location" value="US East"/>
+		<parameter name="perfecto.capabilities.location" value="EU Frankfurt"/>
 		<parameter name="perfecto.capabilities.resolution" value="1024x768"/>
 		<parameter name="perfecto.capabilities.deviceType" value="Web"/>
 		<parameter name="env.resources" value="src/main/resources/common" />
@@ -43,12 +43,12 @@
 				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
 		</classes>
 	</test>
-		<test name="Windows 7 Chrome beta Test US East" enabled="true" thread-count="10">
+		<test name="Windows 7 Chrome beta Test EU Frankfurt" enabled="true" thread-count="10">
 		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
 		<parameter name="perfecto.capabilities.platformVersion" value="7"/>
 		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
 		<parameter name="perfecto.capabilities.browserName" value="Chrome"/>
-		<parameter name="perfecto.capabilities.location" value="US East"/>
+		<parameter name="perfecto.capabilities.location" value="EU Frankfurt"/>
 		<parameter name="perfecto.capabilities.resolution" value="1024x768"/>
 		<parameter name="perfecto.capabilities.deviceType" value="Web"/>
 		<parameter name="env.resources" value="src/main/resources/common" />
@@ -62,12 +62,12 @@
 				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
 		</classes>
 	</test>
-	<test name="Windows 10 Firefox beta Test US East" enabled="true" thread-count="10">
+	<test name="Windows 10 Firefox beta Test EU Frankfurt" enabled="true" thread-count="10">
 		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
 		<parameter name="perfecto.capabilities.platformVersion" value="10"/>
 		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
 		<parameter name="perfecto.capabilities.browserName" value="Firefox"/>
-		<parameter name="perfecto.capabilities.location" value="US East"/>
+		<parameter name="perfecto.capabilities.location" value="EU Frankfurt"/>
 		<parameter name="perfecto.capabilities.resolution" value="1024x768"/>
 		<parameter name="perfecto.capabilities.deviceType" value="Web"/>
 		<parameter name="env.resources" value="src/main/resources/common" />
@@ -82,12 +82,12 @@
 		</classes>
 	</test>
 	
-	<test name="Windows 8.1 Firefox beta Test US East" enabled="true" thread-count="10">
+	<test name="Windows 8.1 Firefox beta Test EU Frankfurt" enabled="true" thread-count="10">
 		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
 		<parameter name="perfecto.capabilities.platformVersion" value="8.1"/>
 		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
 		<parameter name="perfecto.capabilities.browserName" value="Firefox"/>
-		<parameter name="perfecto.capabilities.location" value="US East"/>
+		<parameter name="perfecto.capabilities.location" value="EU Frankfurt"/>
 		<parameter name="perfecto.capabilities.resolution" value="1024x768"/>
 		<parameter name="perfecto.capabilities.deviceType" value="Web"/>
 		<parameter name="env.resources" value="src/main/resources/common" />
@@ -101,12 +101,12 @@
 				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
 		</classes>
 	</test>
-		<test name="Windows 7 Firefox beta Test US East" enabled="true" thread-count="10">
+		<test name="Windows 7 Firefox beta Test EU Frankfurt" enabled="true" thread-count="10">
 		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
 		<parameter name="perfecto.capabilities.platformVersion" value="7"/>
 		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
 		<parameter name="perfecto.capabilities.browserName" value="Firefox"/>
-		<parameter name="perfecto.capabilities.location" value="US East"/>
+		<parameter name="perfecto.capabilities.location" value="EU Frankfurt"/>
 		<parameter name="perfecto.capabilities.resolution" value="1024x768"/>
 		<parameter name="perfecto.capabilities.deviceType" value="Web"/>
 		<parameter name="env.resources" value="src/main/resources/common" />
@@ -121,12 +121,12 @@
 		</classes>
 	</test>
 	
-	<test name="Windows 10 Edge 83 Test US East" enabled="false" thread-count="10">
+	<test name="Windows 10 Edge 83 Test EU Frankfurt" enabled="false" thread-count="10">
 		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
 		<parameter name="perfecto.capabilities.platformVersion" value="10"/>
 		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
 		<parameter name="perfecto.capabilities.browserName" value="Edge"/>
-		<parameter name="perfecto.capabilities.location" value="US East"/>
+		<parameter name="perfecto.capabilities.location" value="EU Frankfurt"/>
 		<parameter name="perfecto.capabilities.resolution" value="1024x768"/>
 		<parameter name="perfecto.capabilities.deviceType" value="Web"/>
 		<parameter name="env.resources" value="src/main/resources/common" />
@@ -141,12 +141,12 @@
 		</classes>
 	</test>
 	
-	<test name="Windows 8.1 Edge 83 Test US East" enabled="false" thread-count="10">
+	<test name="Windows 8.1 Edge 83 Test EU Frankfurt" enabled="false" thread-count="10">
 		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
 		<parameter name="perfecto.capabilities.platformVersion" value="8.1"/>
 		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
 		<parameter name="perfecto.capabilities.browserName" value="Edge"/>
-		<parameter name="perfecto.capabilities.location" value="US East"/>
+		<parameter name="perfecto.capabilities.location" value="EU Frankfurt"/>
 		<parameter name="perfecto.capabilities.resolution" value="1024x768"/>
 		<parameter name="perfecto.capabilities.deviceType" value="Web"/>
 		<parameter name="env.resources" value="src/main/resources/common" />
@@ -160,12 +160,12 @@
 				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
 		</classes>
 	</test>
-		<test name="Windows 7 Edge 83 Test US East" enabled="false" thread-count="10">
+		<test name="Windows 7 Edge 83 Test EU Frankfurt" enabled="false" thread-count="10">
 		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
 		<parameter name="perfecto.capabilities.platformVersion" value="7"/>
 		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
 		<parameter name="perfecto.capabilities.browserName" value="Edge"/>
-		<parameter name="perfecto.capabilities.location" value="US East"/>
+		<parameter name="perfecto.capabilities.location" value="EU Frankfurt"/>
 		<parameter name="perfecto.capabilities.resolution" value="1024x768"/>
 		<parameter name="perfecto.capabilities.deviceType" value="Web"/>
 		<parameter name="env.resources" value="src/main/resources/common" />

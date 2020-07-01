@@ -7,6 +7,7 @@
 
 	<test name="Android Test" enabled="true">
 		<parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>
+		<parameter name="perfecto.capabilities.browserName" value="Chrome"></parameter>
 		<groups>
 			<run>
 				<include name="@WikipediaApple" />
@@ -19,6 +20,7 @@
 	</test>
 	<test name="iOS Test" enabled="true">
 		<parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
+		<parameter name="perfecto.capabilities.browserName" value="Chrome"></parameter>
 		<groups>
 			<run>
 				<include name="@WikipediaApple" />
