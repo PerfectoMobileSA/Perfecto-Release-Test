@@ -3,7 +3,7 @@
 	thread-count="100">
 	<listeners>
 		<listener class-name="com.quantum.listeners.CustomTestNGReporter"/>
-		<listener class-name="com.quantum.listeners.QuantumReportiumListener" />
+		<listener class-name="com.quantum.listeners.QuantumReportiumListener"/>
 	</listeners>
 
 	<test name="Web Scenarios Chrome Test" enabled="true">
