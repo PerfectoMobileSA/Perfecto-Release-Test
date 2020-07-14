@@ -60,15 +60,9 @@
 					<forkCount>5</forkCount>
 					<reuseForks>true</reuseForks>
 					<suiteXmlFiles>
-						<suiteXmlFile>${testngXmlDir}/testng_web.xml</suiteXmlFile>
-						<suiteXmlFile>${testngXmlDir}/testng_web_parallel.xml</suiteXmlFile>
-						<suiteXmlFile>${testngXmlDir}/testng_web_desktop.xml</suiteXmlFile> 
-						<suiteXmlFile>${testngXmlDir}/06desktopWeb_testng.xml</suiteXmlFile>
-						 <suiteXmlFile>${testngXmlDir}/06testng_desktop.xml</suiteXmlFile>
-						<suiteXmlFile>${testngXmlDir}/01Wikipedia.xml</suiteXmlFile>
-						<suiteXmlFile>${testngXmlDir}/02WikipediaLocators.xml</suiteXmlFile>
+						<suiteXmlFile>${testngXmlDir}/testng_desktop1.xml</suiteXmlFile>
+						<suiteXmlFile>${testngXmlDir}/testng_desktop2.xml</suiteXmlFile>
 					</suiteXmlFiles>
-
 				</configuration>
 			</plugin>
 		</plugins>

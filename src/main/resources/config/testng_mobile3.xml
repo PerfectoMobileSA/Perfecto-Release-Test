@@ -102,10 +102,7 @@
         <parameter name="driver.additional.capabilities" value="{'fullReset':true}" />
 		<parameter name="driver.capabilities.platformName" value="iOS"/>
 		<parameter name="driver.capabilities.deviceName" value="iPhone X"/>
-		<parameter name="driver.capabilities.app" value="PRIVATE:iOSNativeSim.app"/>
-		<parameter name="driver.capabilities.appActivity" value="app.perfecto.com.expencemanager.ui.splash.SplashActivity"/>
-		<parameter name="driver.capabilities.localAppPath" value="iOSNativeSim.zip"/>
-		<parameter name="driver.capabilities.bundleId" value="io.perfecto.expense.tracker"/>
+		<parameter name="driver.capabilities.app" value="PUBLIC:Support/Hello.app.zip"/>
 		<parameter name="driver.name" value="perfectoDriver"/>
 		<parameter name="env.resources" value="src/main/resources/ios"/>
         <groups>
