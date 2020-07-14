@@ -21,8 +21,8 @@ And I start application by id "io.perfecto.expense.tracker"
 Then I should see expense tracker login screen
 
 @nativeTest
-Scenario: Verify Expense tracker Login
-Given I start application by id "io.perfecto.expense.tracker"
-Then I should see expense tracker Native login screen
-When I enter "test@test.com" and "password123" in native login screen
-Then I should see expense tracker Native login screen
+Scenario: Verify Hellow World App
+Given I start application by id "com.sample.project.Hello"
+Then I verify Hello text
+When I click Hello world button
+Then I verify Hello text
