@@ -183,6 +183,7 @@
 	<test name="Web Scenarios iOS iPad Test" enabled="true" thread-count="10">
 		<parameter name="driver.capabilities.model" value="iPad.*"></parameter>
 		<parameter name="driver.capabilities.browserName" value="Safari"></parameter>
+		<parameter name="driver.capabilities.platformName" value="iOS"/>
 		<parameter name="driver.capabilities.platformVersion" value="13.5.1"></parameter>
 		<groups>
 			<run>

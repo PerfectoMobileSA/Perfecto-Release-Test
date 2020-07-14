@@ -151,9 +151,10 @@
         name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
     </classes>
   </test>
-  <test name="iPad Release Test" enabled="true" parallel="methods">
+  <test name="iPad Release Test" enabled="true">
         <parameter name="driver.capabilities.model" value="iPad.*"/>
         <parameter name="driver.capabilities.browserName" value="Safari"/>
+        <parameter name="driver.capabilities.platformName" value="iOS"/>
 		<parameter name="driver.capabilities.platformVersion" value="13.5.1"></parameter>
         <parameter name="env.resources" value="src/main/resources/ios"/>
 
