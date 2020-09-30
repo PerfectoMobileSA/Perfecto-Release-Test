@@ -35,5 +35,4 @@ public class POMStepDefs extends WebDriverTestCase {
         homePage.validateUserLoggedIn(USERNAME);
     }
 
-
 }
