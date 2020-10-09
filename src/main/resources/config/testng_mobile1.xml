@@ -45,7 +45,7 @@
 		</classes>
 	</test> 
 	<test name="iOS Test 2" enabled="true">
-		<parameter name="driver.capabilities.model" value="iPho123.*"></parameter>
+		<parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
 		<parameter name="perfecto.capabilities.browserName" value="Chrome"></parameter>
 		<parameter name="perfecto.harfile.enable" value="false"/>
 		<groups>
