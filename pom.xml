@@ -60,8 +60,10 @@
 					<forkCount>5</forkCount>
 					<reuseForks>true</reuseForks>
 					<suiteXmlFiles>
-						<suiteXmlFile>${testngXmlDir}/testng_desktop1.xml</suiteXmlFile>
-						<suiteXmlFile>${testngXmlDir}/testng_desktop2.xml</suiteXmlFile>
+						<suiteXmlFile>${testngXmlDir}/testng_mobile1.xml</suiteXmlFile>
+						<suiteXmlFile>${testngXmlDir}/testng_mobile2.xml</suiteXmlFile>
+						<suiteXmlFile>${testngXmlDir}/testng_mobile3.xml</suiteXmlFile>
+						<suiteXmlFile>${testngXmlDir}/testng_mobile4.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
