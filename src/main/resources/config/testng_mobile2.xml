@@ -37,6 +37,7 @@
     
         <test name="IOS Contacts 2" enabled="true">
         <parameter name="env.resources" value="src/main/resources/ios"/>
+        <parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
 
         <groups>
             <run>
@@ -88,7 +89,7 @@
     
     <test name="IOS Contacts 3" enabled="true">
         <parameter name="env.resources" value="src/main/resources/ios"/>
-
+		<parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
         <groups>
             <run>
                 <include name="@wikipediaDynamicData"/>

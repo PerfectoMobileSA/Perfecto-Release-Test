@@ -179,10 +179,20 @@ public class CustomTestNGReporter implements IReporter {
 					
 					/* Exclude groups. */
 					retBuf.append("<td>");
-					retBuf.append(this.stringArrayToString(testObj.getExcludedGroups()));
+					//retBuf.append(this.stringArrayToString(testObj.getExcludedGroups()));
+					Set<ITestResult> failMap = testObj.getFailedTests().getAllResults();
+					for (ITestResult fail : failMap) {
+						retBuf.append("<b>");
+						retBuf.append(fail.getMethod().getMethodName()+":");
+						retBuf.append("</b>");
+						retBuf.append("<br/>");
+						retBuf.append(fail.getThrowable().getMessage());
+						retBuf.append("<br/>");
+					}
 					retBuf.append("</td>");
 					
 					retBuf.append("</tr>");
+					
 				}
 			}
 		}catch(Exception ex)

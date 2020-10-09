@@ -9,6 +9,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 
+import com.qmetry.qaf.automation.core.ConfigurationManager;
 import com.qmetry.qaf.automation.step.QAFTestStepProvider;
 import com.qmetry.qaf.automation.ui.WebDriverTestBase;
 import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement;
@@ -16,6 +17,7 @@ import com.quantum.pages.GooglePage;
 import com.quantum.utils.DeviceUtils;
 import com.quantum.utils.DriverUtils;
 import com.quantum.utils.PerfectoUtils;
+import com.quantum.utils.ReportUtils;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -104,7 +106,7 @@ public class GoogleStepDefs {
 	
 	@Then("I should verify \"([^\"]*)\" visually")
 	public void iVerifyTextVisually(String text) {
-		new PerfectoUtils().verifyVisualText(text,30);
+		ReportUtils.getReportClient().reportiumAssert("Verify Text: "+text, new PerfectoUtils().verifyVisualText(text,30));
 	}
 	
 	@When("I select perfecto logo \"([^\"]*)\" visually")
@@ -117,4 +119,5 @@ public class GoogleStepDefs {
 	public void iVerifyPerfectoWithImage(String img) {
 		new PerfectoUtils().verifyVisualImage(img, 30);
 	}
+	
 }
