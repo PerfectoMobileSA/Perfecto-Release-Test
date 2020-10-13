@@ -56,7 +56,13 @@ public class GoogleStepDefs {
 
 		searchBoxElement.clear();
 		searchBoxElement.sendKeys(searchKey);
-		searchBoxElement.sendKeys(Keys.ENTER);
+		String os = DeviceUtils.getDeviceProperty("os");
+		if(os.equalsIgnoreCase("android") || os.equalsIgnoreCase("ios")) {
+			new QAFExtendedWebElement(By.xpath("//*[@class='UUbT9']//LI[1]")).click();
+		}else {
+			JavascriptExecutor js = (JavascriptExecutor) DeviceUtils.getQAFDriver();
+			js.executeScript("arguments[0].click();", searchBtnElement);
+		}
 		// Web and mobile elements are sometimes different so we have done two things we
 		// used multiple/alternate locator strategy for finding the element.
 		// We also used Javascript click because the element was getting hidden in
@@ -70,7 +76,7 @@ public class GoogleStepDefs {
 	@Then("^it should have \"([^\"]*)\" in search results$")
 	public void it_should_have_in_search_results(String result) throws Throwable {
 		QAFExtendedWebElement searchResultElement = new QAFExtendedWebElement("partialLink=" + result);
-		searchResultElement.verifyPresent(result);
+		ReportUtils.getReportClient().reportiumAssert("Verify Google search", searchResultElement.isDisplayed());
 	}
 
 	@Then("^it should have following search results:$")

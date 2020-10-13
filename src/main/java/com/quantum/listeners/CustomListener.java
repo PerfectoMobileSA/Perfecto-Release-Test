@@ -42,7 +42,7 @@ public class CustomListener implements ITestListener {
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		result.getThrowable().getMessage();
+		//result.getThrowable().getMessage();
 		verifyHarFile();
 	}
 
