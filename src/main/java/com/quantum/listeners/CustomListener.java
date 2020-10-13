@@ -89,6 +89,7 @@ public class CustomListener implements ITestListener {
 				PerfectoExecutionContext perfectoExecutionContext = null;
 				try {
 					driver = new RemoteWebDriver(new URL(ConfigurationManager.getBundle().getString("remote.server")),capabilities);
+					driver.manage().window().maximize();
 					if(System.getProperty("reportium-job-name","")!="" && System.getProperty("reportium-job-number","")!="") {
 						perfectoExecutionContext = new PerfectoExecutionContext.PerfectoExecutionContextBuilder()
 								//								.withProject(new Project("Sample Reportium project", "1.0"))
@@ -131,9 +132,11 @@ public class CustomListener implements ITestListener {
 					reportiumClient.reportiumAssert("Network files Validation.", false);
 				}
 				System.out.println("Report Url: "+reportiumClient.getReportUrl());
+				reportiumClient.testStop(TestResultFactory.createSuccess());
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
+			reportiumClient.testStop(TestResultFactory.createFailure(e));
 		}finally {
 			if(driver!=null)
 				driver.quit();

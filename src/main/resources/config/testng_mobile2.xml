@@ -9,7 +9,7 @@
     <!-- by driverClass property in env.resources dirs -->
     <!-- Set driver.name value to perfectoDriver       -->
     <parameter name="driver.name" value="perfectoDriver"/>
-
+ 
     <test name="IOS Contacts" enabled="true">
         <parameter name="env.resources" value="src/main/resources/ios"/>
 
@@ -63,7 +63,7 @@
     <test name="IOS Clock" enabled="true">
     <parameter name="driver.capabilities.deviceName" value="0C2210C8EBD9A1FB421A8D0A692E6C72F85E4C9E"></parameter>
     <parameter name="env.resources" value="src/main/resources/ios"/>
-    <!--  <parameter name="env.resources" value="src/main/resources/common"/>  -->
+     <parameter name="env.resources" value="src/main/resources/common"/> 
 
     <groups>
         <run>
@@ -105,6 +105,32 @@
         <groups>
             <run>
                 <include name="@wikipediaDynamicData"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
+        </classes>
+    </test>
+    <test name="Device Unavailability test" enabled="true">
+        <parameter name="driver.capabilities.model" value="Galay S.*"/>
+        <parameter name="env.resources" value="src/main/resources/android"/>
+        <groups>
+            <run>
+                <include name="@wikipediaDynamicData"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
+        </classes>
+    </test>
+    <test name="Quantum 1.22.0 tests" enabled="true">
+        <parameter name="driver.capabilities.model" value="Galaxy S10|Pixel 3"/>
+        <parameter name="env.resources" value="src/main/resources/android"/>
+        <groups>
+            <run>
+                <include name="@accessibilityAudit"/>
+                <include name="@phoneCall"/>
+                <include name="@sendSMS"/>
             </run>
         </groups>
         <classes>

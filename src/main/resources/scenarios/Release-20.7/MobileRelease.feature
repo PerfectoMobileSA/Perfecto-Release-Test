@@ -9,5 +9,21 @@ And I should verify "Email address" visually
 And I should verify "Password" visually
 
 @phoneCall
-Scenario: Verify calls between 2 devices
-Given I close application by name "Tide"
+Scenario: Verify incoming call
+Given I make call to the device
+Then I should see the incoming call
+
+@sendSMS
+Scenario: Verify SMS
+Given I send SMS to the device
+Then I should see SMS in message app
+
+@accessibilityAudit
+Scenario: Verify accessibility audit
+Given I start application by name "Calculator"
+Given I perform an audit of the accessibility on tag application screen "First Screen"
+Then I should be able to download the audit results
+
+
+
+

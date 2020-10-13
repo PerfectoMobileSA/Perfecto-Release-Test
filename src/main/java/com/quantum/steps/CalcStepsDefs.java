@@ -86,6 +86,11 @@ public class CalcStepsDefs {
 	public void iShouldSeeTheResultVisually(String res) {
 		DeviceUtils.verifyVisualText(res);
 	}
+	
+	@Then("I should be able to download the audit results")
+	public void iShouldDownloadAuditresults() {
+		moreActions.verifyAuditResults();
+	}
 
 
 }
