@@ -9,9 +9,12 @@
       <test name="Android Test" enabled="true">
         <parameter name="driver.capabilities.model" value="Galaxy.*"/>
         <parameter name="perfecto.capabilities.browserName" value="Chrome"/>
+        <parameter name="perfecto.harfile.enable" value="true"/>
         <groups>
             <run>
                 <include name="@W3testLocators" />
+                <include name="@WikipediaApple" />
+                <include name="@WikipediaLocators" />
             </run>
         </groups>
         <classes>
@@ -22,43 +25,20 @@
     <test name="iOS Test" enabled="true">
         <parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
         <parameter name="perfecto.capabilities.browserName" value="Safari"/>
+        <parameter name="perfecto.harfile.enable" value="true"/>
         <groups>
             <run>
                 <include name="@W3testLocators" />
+                <include name="@WikipediaApple" />
+                <include name="@WikipediaLocators" />
+                <include name="@Desktop" />
+				<include name="@WikipediaDesktop" />
             </run>
         </groups>
         <classes>
             <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
         </classes>
     </test>
-    
-    <test name="Android Test 2" enabled="true">
-		<parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>
-		<parameter name="perfecto.capabilities.browserName" value="Chrome"></parameter>
-		<parameter name="perfecto.harfile.enable" value="false"/>
-		<groups>
-			<run>
-				<include name="@WikipediaApple" />
-			</run>
-		</groups>
-		<classes>
-			<class
-				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
-		</classes>
-	</test> 
-	<test name="iOS Test 2" enabled="true">
-		<parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
-		<parameter name="perfecto.capabilities.browserName" value="Safari"></parameter>
-		<parameter name="perfecto.harfile.enable" value="false"/>
-		<groups>
-			<run>
-				<include name="@WikipediaApple" />
-			</run>
-		</groups>
-		<classes>
-			<class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
-		</classes>
-	</test>
 	
 	 <test name="Android Test 3" enabled="false">
         <parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>
@@ -87,31 +67,7 @@
             <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
         </classes>
     </test>
-    <test name="Android Test 4" enabled="true">
-		<parameter name="driver.capabilities.model" value="Galaxy.*"/>
-		<parameter name="perfecto.capabilities.browserName" value="Chrome"/>
-		<groups>
-			<run>
-				<include name="@WikipediaLocators" />
-			</run>
-		</groups>
-		<classes>
-			<class
-				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
-		</classes>
-	</test>
-	<test name="iOS Test 4" enabled="true">
-		<parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
-		<parameter name="perfecto.capabilities.browserName" value="Safari"></parameter>
-		<groups>
-			<run>
-				<include name="@WikipediaLocators" />
-			</run>
-		</groups>
-		<classes>
-			<class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
-		</classes>
-	</test>
+
 	
 	 <test name="POM Test" enabled="false">
         <parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
@@ -128,35 +84,7 @@
         </classes>
     </test>
     
-    <test name="IOS Test Wikipedia" enabled="true">
-        <parameter name="perfecto.capabilities.platformName" value="iOS"></parameter>
-        <parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
-        <parameter name="perfecto.capabilities.deviceType" value="Mobile"></parameter>
 
-        <groups>
-            <run>
-                <include name="@WikipediaDesktop" />
-            </run>
-        </groups>
-        <classes>
-            <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
-        </classes>
-    </test>
-	<test name="IOS Test 5" enabled="true">
-        <parameter name="perfecto.capabilities.platformName" value="iOS"></parameter>
-		<parameter name="perfecto.capabilities.browserName" value="Safari"></parameter>
-        <parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
-        <parameter name="perfecto.capabilities.deviceType" value="Mobile"></parameter>
-
-        <groups>
-			<run>
-				<include name="@Desktop" />
-			</run>
-		</groups>
-		<classes>
-			<class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
-		</classes>
-	</test>
 	<test name="Web Scenarios Android Test" enabled="false"
 		thread-count="10">
 		<parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>
@@ -199,20 +127,7 @@
 				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
 		</classes>
 	</test>
-	<test name="Android Test 6" enabled="true">
-		<parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>
-		<parameter name="driver.capabilities.browserName" value="Chrome"></parameter>
-		<groups>
-			<run>
-				<include name="@WikipediaLocators" />
-			</run>
-		</groups>
-		<classes>
-			<class
-				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
-		</classes>
-	</test>
-    <test name="LG Test" enabled="true">
+    <test name="LG Test" enabled="false">
         <parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>
         <parameter name="driver.capabilities.browserName" value="Chrome"></parameter>
         <groups>
@@ -225,7 +140,7 @@
                     name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
         </classes>
     </test>
-	<test name="iOS Test 6" enabled="true">
+	<test name="iOS Test 6" enabled="false">
 		<parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
 		<parameter name="driver.capabilities.browserName" value="Safari"></parameter>
 		<groups>

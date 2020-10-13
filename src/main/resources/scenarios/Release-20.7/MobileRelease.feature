@@ -24,6 +24,3 @@ Given I start application by name "Calculator"
 Given I perform an audit of the accessibility on tag application screen "First Screen"
 Then I should be able to download the audit results
 
-
-
-

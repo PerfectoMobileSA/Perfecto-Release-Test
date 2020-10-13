@@ -5,7 +5,7 @@
 		<listener class-name="com.quantum.listeners.QuantumReportiumListener"/>
     </listeners>
 
-    <test name="SMS Test Android to Android"  enabled="true">
+    <test name="SMS Test Android to Android"  enabled="false">
         <parameter name="driverNameList" value="perfectoDriver,perfectodevii"></parameter>
         <parameter name="perfectodevii.capabilities.platformName" value= "Android"></parameter>
         <parameter name="perfectodevii.capabilities.deviceName" value= "RF8M329FK3X"></parameter>

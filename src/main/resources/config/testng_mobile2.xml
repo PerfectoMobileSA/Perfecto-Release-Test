@@ -87,7 +87,7 @@
         </classes>
     </test>
     
-    <test name="IOS Contacts 3" enabled="true">
+    <test name="IOS Contacts 3" enabled="false">
         <parameter name="env.resources" value="src/main/resources/ios"/>
 		<parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
         <groups>
@@ -99,7 +99,7 @@
             <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
         </classes>
     </test>
-    <test name="Android Contacts 3" enabled="true">
+    <test name="Android Contacts 3" enabled="false">
         <parameter name="driver.capabilities.model" value="Galaxy S.*"></parameter>
         <parameter name="env.resources" value="src/main/resources/android"/>
         <groups>

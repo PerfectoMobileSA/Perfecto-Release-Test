@@ -10,7 +10,7 @@
     <!-- Set driver.name value to perfectoDriver       -->
      <parameter name="driver.name" value="perfectoDriver"/>
 
-     <test name="IOS Release Test" enabled="true" parallel="methods">
+     <test name="IOS Release Test" enabled="true" >
         <parameter name="driver.capabilities.model" value="iPhone.*"/>
         <parameter name="driver.capabilities.browserName" value="Safari"/>
         <parameter name="env.resources" value="src/main/resources/ios"/>
@@ -26,7 +26,7 @@
             <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
         </classes>
     </test>
-    <test name="Android Release Test" enabled="true" parallel="methods">
+    <test name="Android Release Test" enabled="true" >
         <parameter name="driver.capabilities.model" value="Galaxy.*"/>
         <parameter name="driver.capabilities.browserName" value="Chrome"/>
         <parameter name="env.resources" value="src/main/resources/android"/>
@@ -115,7 +115,7 @@
     </test> 
 
     
-    <test name="Phone calls scenario Android + Android" enabled="false" parallel="tests">
+    <test name="Phone calls scenario Android + Android" enabled="false">
     <parameter name="driver.name" value="perfectodeviiDriver"/>
     <parameter name="driverNameList" value="perfectodevii,perfectoRemote"/>
     <parameter name="selenium.singletone" value="method"/>
