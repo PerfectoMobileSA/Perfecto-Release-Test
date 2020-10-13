@@ -6,7 +6,7 @@
     </listeners>
 
     <test name="Chrome Test Wikipedia" enabled="true">
-
+		<parameter name="perfecto.harfile.enable" value="true"/>
         <parameter name="perfecto.capabilities.platformName" value="Windows"></parameter>
         <parameter name="perfecto.capabilities.platformVersion" value="10"></parameter>
         <parameter name="perfecto.capabilities.browserName" value="Chrome"></parameter>
@@ -28,7 +28,7 @@
         </classes>
     </test>
     <test name="Chrome Test" enabled="true">
-
+		
         <parameter name="perfecto.capabilities.platformName" value="Windows"></parameter>
         <parameter name="perfecto.capabilities.platformVersion" value="10"></parameter>
         <parameter name="perfecto.capabilities.browserName" value="Chrome"></parameter>

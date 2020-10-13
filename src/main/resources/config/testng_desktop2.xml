@@ -25,6 +25,7 @@
 		</classes>
 	</test>
 	<test name="Windows 8.1 Chrome beta Test US East" enabled="true" thread-count="10">
+		<parameter name="perfecto.harfile.enable" value="true"/>
 		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
 		<parameter name="perfecto.capabilities.platformVersion" value="8.1"/>
 		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
@@ -63,6 +64,7 @@
 		</classes>
 	</test>
 	<test name="Windows 10 Firefox beta Test US East" enabled="true" thread-count="10">
+		<parameter name="perfecto.harfile.enable" value="true"/>
 		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
 		<parameter name="perfecto.capabilities.platformVersion" value="10"/>
 		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
@@ -83,6 +85,7 @@
 	</test>
 	
 	<test name="Windows 8.1 Firefox beta Test US East" enabled="true" thread-count="10">
+		<parameter name="perfecto.harfile.enable" value="true"/>
 		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
 		<parameter name="perfecto.capabilities.platformVersion" value="8.1"/>
 		<parameter name="perfecto.capabilities.browserVersion" value="beta"/>
