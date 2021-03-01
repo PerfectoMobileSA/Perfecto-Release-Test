@@ -1,0 +1,16 @@
+perfecto.scriptless.username.textfield=id=username
+perfecto.scriptless.password.textfield=id=password
+perfecto.scriptless.signin.button=id=kc-login
+perfecto.scriptless.build.web.test.button=css=.AppCard__new-ribbon___1LSSJ
+perfecto.scriptless.projectSearch.textfield=xpath=//*[@placeholder='Search project by name']
+perfecto.scriptless.project.button=xpath=(//span[contains(text(),'%s')])[1]
+perfecto.scriptless.testBy.button=xpath=(//span[contains(text(),'%s')])[1]
+perfecto.scriptless.test.run.button=css=.pm-btn-sm-primary
+perfecto.scriptless.test.disableBreakPoint.button=xpath=//*[@type='checkbox' and @aria-checked='true']
+perfecto.scriptless.test.start.button=css=.md-container
+perfecto.scriptless.test.finalRun.button=css=.pm-button-primary-regular
+perfecto.scriptless.test.success.label=xpath=//i[text()='%s']
+perfecto.scriptless.test.viewOnCanvas.button=css=.main-toolbar-btn:nth-child(1)
+perfecto.scriptless.test.tests.button=css=.project-menu-title-text
+perfecto.scriptless.settings.button=css=.UserMenu__user-name___103Q5
+perfecto.scriptless.signout.button=linkText=Sign out

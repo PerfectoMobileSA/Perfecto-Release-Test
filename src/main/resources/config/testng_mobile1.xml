@@ -8,6 +8,7 @@
 
       <test name="Android Test" enabled="true">
         <parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>
+      	<parameter name="perfecto.capabilities.openDeviceTimeout" value="3"></parameter>
         <groups>
             <run>
                 <include name="@W3testLocators" />
@@ -20,6 +21,7 @@
     </test>
     <test name="iOS Test" enabled="true">
         <parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
+    	<parameter name="perfecto.capabilities.openDeviceTimeout" value="3"></parameter>
         <groups>
             <run>
                 <include name="@W3testLocators" />
@@ -34,6 +36,7 @@
 		<parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>
 		<parameter name="perfecto.capabilities.browserName" value="Chrome"></parameter>
 		<parameter name="perfecto.harfile.enable" value="false"/>
+ 		<parameter name="perfecto.capabilities.openDeviceTimeout" value="3"></parameter>
 		<groups>
 			<run>
 				<include name="@WikipediaApple" />
@@ -48,6 +51,7 @@
 		<parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
 		<parameter name="perfecto.capabilities.browserName" value="Chrome"></parameter>
 		<parameter name="perfecto.harfile.enable" value="false"/>
+ 		<parameter name="perfecto.capabilities.openDeviceTimeout" value="3"></parameter>
 		<groups>
 			<run>
 				<include name="@WikipediaApple" />
@@ -60,6 +64,7 @@
 	
 	 <test name="Android Test 3" enabled="false">
         <parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>
+ 		<parameter name="perfecto.capabilities.openDeviceTimeout" value="3"></parameter>
         <parameter name="env.resources" value="src/main/resources/android"/>
 
         <groups>
@@ -74,6 +79,7 @@
     </test>
     <test name="iOS Test 3" enabled="false">
         <parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
+ 		<parameter name="perfecto.capabilities.openDeviceTimeout" value="3"></parameter>
         <parameter name="env.resources" value="src/main/resources/ios"/>
 
         <groups>
@@ -87,6 +93,7 @@
     </test>
     <test name="Android Test 4" enabled="true">
 		<parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>
+ 		<parameter name="perfecto.capabilities.openDeviceTimeout" value="3"></parameter>
 		<parameter name="perfecto.capabilities.browserName" value="Chrome"></parameter>
 		<groups>
 			<run>
@@ -100,6 +107,7 @@
 	</test>
 	<test name="iOS Test 4" enabled="true">
 		<parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
+ 		<parameter name="perfecto.capabilities.openDeviceTimeout" value="3"></parameter>
 		<parameter name="perfecto.capabilities.browserName" value="iOS"></parameter>
 		<groups>
 			<run>
@@ -114,7 +122,7 @@
 	 <test name="POM Test" enabled="false">
         <parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
         <parameter name="driver.capabilities.deviceName" value="C37BAE1934AE7DD0AE3355F77146C7A65579CAA3"></parameter>
-
+ 		<parameter name="perfecto.capabilities.openDeviceTimeout" value="3"></parameter>
         <parameter name="env.resources" value="src/main/resources/ios"></parameter>
         <groups>
             <run>
@@ -130,7 +138,7 @@
         <parameter name="perfecto.capabilities.platformName" value="iOS"></parameter>
         <parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
         <parameter name="perfecto.capabilities.deviceType" value="Mobile"></parameter>
-
+ 		<parameter name="perfecto.capabilities.openDeviceTimeout" value="3"></parameter>
         <groups>
             <run>
                 <include name="@WikipediaDesktop" />
@@ -142,10 +150,10 @@
     </test>
 	<test name="IOS Test 5" enabled="true">
         <parameter name="perfecto.capabilities.platformName" value="iOS"></parameter>
-<parameter name="perfecto.capabilities.browserName" value="Safari"></parameter>
+		<parameter name="perfecto.capabilities.browserName" value="Safari"></parameter>
         <parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
         <parameter name="perfecto.capabilities.deviceType" value="Mobile"></parameter>
-
+ 		<parameter name="perfecto.capabilities.openDeviceTimeout" value="3"></parameter>
         <groups>
 			<run>
 				<include name="@Desktop" />
@@ -159,6 +167,7 @@
 		thread-count="10">
 		<parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>
 		<parameter name="driver.capabilities.browserName" value="Chrome"></parameter>
+ 		<parameter name="perfecto.capabilities.openDeviceTimeout" value="3"></parameter>
 		<groups>
 			<run>
 				<include name="@20.8Web" />
@@ -172,6 +181,7 @@
 	<test name="Web Scenarios iOS Test" enabled="false" thread-count="10">
 		<parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
 		<parameter name="driver.capabilities.browserName" value="Safari"></parameter>
+ 		<parameter name="perfecto.capabilities.openDeviceTimeout" value="3"></parameter>
 		<groups>
 			<run>
 				<include name="@20.8Web" />
@@ -187,6 +197,7 @@
 		<parameter name="driver.capabilities.browserName" value="Safari"></parameter>
 		<parameter name="driver.capabilities.platformName" value="iOS"/>
 		<parameter name="driver.capabilities.platformVersion" value="13.5.1"></parameter>
+ 		<parameter name="perfecto.capabilities.openDeviceTimeout" value="3"></parameter>
 		<groups>
 			<run>
 				<include name="@20.8Web" />
@@ -199,6 +210,7 @@
 	</test>
 	<test name="Android Test 6" enabled="true">
 		<parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>
+ 		<parameter name="perfecto.capabilities.openDeviceTimeout" value="3"></parameter>
 		<groups>
 			<run>
 				<include name="@WikipediaLocators" />
@@ -211,6 +223,7 @@
 	</test>
     <test name="LG Test" enabled="true">
         <parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>
+ 		<parameter name="perfecto.capabilities.openDeviceTimeout" value="3"></parameter>
         <groups>
             <run>
                 <include name="@WikipediaLocators" />
@@ -223,6 +236,7 @@
     </test>
 	<test name="iOS Test 6" enabled="true">
 		<parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
+ 		<parameter name="perfecto.capabilities.openDeviceTimeout" value="3"></parameter>
 		<groups>
 			<run>
 				<include name="@WikipediaLocators" />

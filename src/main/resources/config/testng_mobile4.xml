@@ -16,7 +16,7 @@
         <!-- <parameter name="perfecto.capabilities.network" value= "AT.*|Verizon"></parameter> -->
         <parameter name="env.resources" value="src/main/resources/android"/>
         <parameter name="driver.name" value="perfectoDriver"/>
-
+ 		<parameter name="perfecto.capabilities.openDeviceTimeout" value="3"></parameter>
         <groups>
             <run>
                 <include name="@twoDevicesSMS"/>

@@ -14,7 +14,7 @@
         <parameter name="driver.capabilities.model" value="iPhone.*"/>
         <parameter name="driver.capabilities.browserName" value="Safari"/>
         <parameter name="env.resources" value="src/main/resources/ios"/>
-
+ 		<parameter name="perfecto.capabilities.openDeviceTimeout" value="3"></parameter>
         <groups>
             <run>
                 <include name="@visualText"/>
@@ -30,6 +30,7 @@
         <parameter name="driver.capabilities.model" value="Galaxy.*"/>
         <parameter name="driver.capabilities.browserName" value="Chrome"/>
         <parameter name="env.resources" value="src/main/resources/android"/>
+ 		<parameter name="perfecto.capabilities.openDeviceTimeout" value="3"></parameter>
         <groups>
             <run>
                 <include name="@imageAnalysis"/>
@@ -129,7 +130,7 @@
     <parameter name="perfectodevii.capabilities.platformName" value="Android"/>
     <parameter name="perfectodevii.capabilities.appPackage" value="com.tideplatform.banking.staging"/>
     <parameter name="perfectodevii.capabilities.driverClass" value="io.appium.java_client.android.AndroidDriver"/>
-
+ 	<parameter name="perfectodevii.capabilities.openDeviceTimeout" value="3"></parameter>
     <!-- Web Parameters -->
     <parameter name="driver.capabilities.sensorInstrument" value="true"/>
     <parameter name="driver.capabilities.app" value="PUBLIC:Apps/app-staging-real-release-2_54_1-6017.apk"/>
@@ -139,7 +140,7 @@
     <parameter name="driver.capabilities.platformName" value="Android"/>
     <parameter name="driver.capabilities.appPackage" value="com.tideplatform.banking.staging"/>
     <parameter name="driver.capabilities.driverClass" value="io.appium.java_client.android.AndroidDriver"/>
-
+ 	<parameter name="driver.capabilities.openDeviceTimeout" value="3"></parameter>
     <groups>
       <run>
         <include name="@phoneCall"/>
@@ -156,7 +157,7 @@
         <parameter name="driver.capabilities.platformName" value="iOS"/>
 		<parameter name="driver.capabilities.platformVersion" value="13.5.1"></parameter>
         <parameter name="env.resources" value="src/main/resources/ios"/>
-
+ 		<parameter name="perfecto.capabilities.openDeviceTimeout" value="3"></parameter>
         <groups>
             <run>
                  <include name="@visualText"/>
